@@ -1,0 +1,21 @@
+$primary_color: #FFFFFF;
+$acent_color: #F0145A;
+$regular_color: #24A3FF;
+
+
+
+%acent_color_gradient {
+    background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+%title {
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 46px;
+}
+
+
+

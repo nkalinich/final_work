@@ -1,0 +1,97 @@
+.modal-container {
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    width: 100vw;
+    height: 100vh;
+    background: #323264c3;
+    display: none;
+}
+
+.modal-container.active {
+    display: flex;
+}
+
+.modal {
+    width: 650px;
+    padding: 30px;
+    background: #F5F5FA;
+    box-shadow: 0px 15px 80px rgba(40, 40, 86, 0.5);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    position: relative;
+}
+
+.modal-title {
+    @extend %title;
+    @extend %acent_color_gradient;
+    margin-bottom: 15px;
+}
+
+.modal-close {
+    width: 32px;
+    position: absolute;
+    right: 4.7%;
+    top: 5%;
+}
+
+.modal-title-second {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #B3B3BA;
+    margin-top: 30px
+}
+
+.modal-input {
+    border: none;
+    width: 100%;
+    height: 56px;
+    background: $primary_color;
+    box-sizing: border-box;
+    border-radius: 8px;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    line-height: 26px;
+    margin-top: 15px;
+    padding: 15px;
+}
+
+.modal-input::placeholder {
+    color: #B3B3BA;
+}
+
+.message {
+    min-height: 130px;
+    resize: none;
+}
+
+.modal-button {
+    width: 100%;
+    border: none;
+    background: #24A3FF;
+    box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+    border-radius: 12px;
+    margin-top: 30px;
+    padding: 18px 0;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+
+    .modal {
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+    }
+}
