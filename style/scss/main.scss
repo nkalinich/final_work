@@ -103,11 +103,15 @@
     justify-content: flex-start;
     text-align: left;
     margin-top: 60px;
-    padding-right: 10px;
+    margin-right: 10px;
 }
 
 .card-logo {
     width: 92px;
+    padding: 14px;
+    width: 92px;
+    background: #FFFFFF;
+    border-radius: 24px;
 }
 
 .card-title {
@@ -116,7 +120,14 @@
     font-size: 22px;
     line-height: 27px;
     color: $regular_color;
+    cursor: pointer;
+
+    &:hover {
+        color: $acent_color;
+    }
 }
+
+
 
 .card-text {
     margin-top: 15px;
@@ -159,6 +170,7 @@
     border-radius: 12px;
     margin: 70px 0 30px;
     max-width: 1320px;
+    min-width: 315px;
 }
 
 .photo {
@@ -171,13 +183,8 @@
 .quote-photo {
     width: 100%;
     height: 100%;
-    min-width: 315px;
-    max-width: 648px;
-    min-height: 298px;
-    max-height: 600px;
     object-fit: cover;
 }
-
 
 .quote-team {
     padding: 30px;
@@ -357,6 +364,10 @@
     text-decoration: none;
 }
 
+.big {
+    margin-right: 0;
+}
+
 .post-pic {
     width: 100%;
 }
@@ -399,7 +410,12 @@
 
 
 
+
 @media (min-width: 1720px) {
+
+    .fix-size {
+        max-width: 1600px;
+    }
     
     .klients {
         width: 100%;
@@ -434,13 +450,38 @@
     
     .quote-block {
         max-width: 1600px;
-        height: 298px;
+        min-height: 298px;
+    }
+
+    .quote-team {
+        width: auto;
+    }
+
+    .photo {
+        max-height: 298px;
+        min-width: 400px;
     }
 
     .logo-block {
         width: auto;
         max-width: 1720px;
-    }   
+    }
+
+    .hillel {
+        border-radius: 12px 0 0 0;
+    }
+
+    .look {
+        border-radius: 0 12px 0 0;
+    }
+
+    .infratek {
+        border-radius: 0 0 0 12px;
+    }
+
+    .ultimate-card {
+        border-radius: 0 0 12px 0;
+    }
 }
 
 
@@ -454,7 +495,7 @@
 
 
 
-@media (max-width: 1280px) {
+@media (max-width: 1290px) {
     
     .card {
         width: 310px;
@@ -468,11 +509,18 @@
     .klients {
         width: 256px;
     }
+
+    .photo {
+        height: auto;
+    }
 }
 
 
-
 @media (max-width: 1024px) {
+
+    .fix-size {
+        max-width: 964px;
+    }
 
     .text-container {
         width: 405px;
@@ -483,17 +531,11 @@
     }
 
     .card {
-        width: 294px;
-    }
-
-    .photo {
-        width: 400px;
-        height: 548px;
+        width: 261px;
     }
 
     .quote-team {
         width: 504px;
-        min-width: 315px;
     }
 
     .logo-block {
@@ -501,7 +543,6 @@
     }
 
     .publications-block {
-        width: 648px;
         height: auto;
     }
 
@@ -513,6 +554,10 @@
 
 
 @media (max-width: 768px) {
+
+    .fix-size {
+        max-width: 708px;
+    }
 
     .wrapp-title {
         padding-top: 269px;
@@ -548,34 +593,35 @@
         width: auto;
     }
 
-    .card {
-        width: 100%;
-        padding: 0;
-    }
-
     .top {
         margin: 0 0 0 27px;
     }
 
-    .quote-block {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .photo {
-        align-self: center;
-        max-width: 640px;
-        max-height: 500px;
-        border-radius: 12px 12px 0px 0px;
-    }
+    .card-container {
+        max-width: 648px
+    } 
 
     .quote-team {
         width: auto;
     }
 
+    .quote-block {
+        display: flex;
+        flex-direction: column;
+        max-width: 648px;
+        margin: 70px auto 30px;
+    }
+
+    .photo {
+        align-self: center;
+        width: 100%;
+        height: 500px;
+        border-radius: 12px 12px 0px 0px;
+    }
+
     .publications-block {
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: center;
     }
 
     .post {
@@ -589,12 +635,17 @@
     .big {
         width: 648px;
         margin-top: 30px;
+        margin-right: 0;
     }
 }
 
 
 
 @media (max-width: 680px) {
+
+    .card {
+        width: 100%;
+    }
 
     .publications-block {
         width: 309px;
@@ -629,7 +680,7 @@
         margin-top: 30px;
     }
 
-    .info__title-name, .wrapp-title-accent, .quote-title {
+    .info__title-name, .wrapp-title-accent, .quote-title, .publications-title {
         font-size: 30px;
         line-height: 37px;
     }
@@ -639,22 +690,12 @@
         line-height: 24px;
     }
 
-    .quote-title {
-        font-weight: 700;
-        font-size: 30px;
-        line-height: 37px;
-    }
-
     .quote-team {
         min-width: 255px;
     }
 
-    .quote-block {
+    .photo, .quote-photo {
         min-width: 315px;
-    }    
-
-    .photo {
-        max-width: 315px;
         min-height: 500px;
     }
 

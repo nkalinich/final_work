@@ -1,0 +1,297 @@
+.wrapp-title-accent {
+    @extend %title;
+    @extend %acent_color_gradient;
+    margin-top: 65px;
+}
+
+.card-container {
+    width: 1300px;
+    max-width: 1600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 60px;
+}
+
+.card {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+    margin-top: 60px;
+    margin-right: 10px;
+}
+
+.card-logo {
+    width: 92px;
+    padding: 14px;
+    width: 92px;
+    background: #FFFFFF;
+    border-radius: 24px;
+}
+
+.card-title {
+    margin-top: 30px;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    color: $regular_color;
+    cursor: pointer;
+
+    &:hover {
+        color: $acent_color;
+    }
+}
+
+.card-text {
+    margin-top: 15px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: $primary_color;
+}
+
+.wrapp::after {
+    content: '';
+    background: #CACADB;
+    border-radius: 0px 0px 12px 12px;
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    height: 10px;
+}
+
+.klients-container::before {
+    content: '';
+    background: #E7E7F2;
+    border-radius: 0px 0px 12px 12px;
+    position: absolute;
+    left: 40px;
+    right: 40px;
+    height: 10px;
+}
+
+.klients-container {
+    padding-top: 10px;
+}
+
+.klients-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #323264;
+    text-align: center;
+    margin: 70px 0 30px;
+}
+
+.hillel {
+    background: #1C4280;
+}
+
+.wanna-biz {
+    background: #143646;
+}
+
+.tapgerine {
+    background: linear-gradient(0deg, #F48B30, #F48B30), #F48B30;
+}
+
+.look {
+    background: #9E4DC3;
+}
+
+.orangear {
+    background: #FD9339;
+}
+
+.adtelligent {
+    background: #E2E2E4;
+}
+
+.clickky {
+    background: #C71C36;
+}
+
+.ecoleasing {
+    background: #DCF3F9;
+}
+
+.infratek {
+    background: #EAEAEA;
+}
+
+.city-park {
+    background: #282240;
+}
+
+.artptint {
+    background: #1D4568;
+}
+
+.ultimate-card {
+    background: #000000;
+}
+
+.klients-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.klients {
+    width: 360px;
+    height: 120px;
+    text-align: center;
+    object-fit: scale-down;
+}
+
+.logo-block {
+    width: 1440px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+
+
+
+
+
+@media (min-width: 1720px) {
+
+    .fix-size {
+        max-width: 1600px;
+    }
+
+    .card-container {
+        width: 1600px;
+    }
+
+    .klients-container {
+        padding-bottom: 60px;
+    }
+
+    .klients {
+        width: 100%;
+        max-width: 430px;
+        min-width: 360px;
+    }    
+}
+
+
+
+@media (min-width: 1441px) {
+
+    .logo-block {
+        width: auto;
+        max-width: 1720px;
+    }
+
+    .hillel {
+        border-radius: 12px 0 0 0;
+    }
+
+    .look {
+        border-radius: 0 12px 0 0;
+    }
+
+    .infratek {
+        border-radius: 0 0 0 12px;
+    }
+
+    .ultimate-card {
+        border-radius: 0 0 12px 0;
+    }
+        
+}
+
+
+
+@media (max-width: 1440px) {
+
+    .card-container {
+        width: auto;
+    }
+}
+
+
+@media (max-width: 1295px) {
+
+    .card {
+        width: 310px;
+    } 
+
+    .logo-block {
+        width: auto;
+        max-width: 1024px;
+    }
+
+    .klients {
+        width: 256px;
+    }
+}
+
+
+@media (max-width: 1024px) {
+
+    .fix-size {
+        max-width: 964px;
+    }
+
+    .card-container {
+        max-width: 904px
+    }
+
+    .card {
+        width: 261px;
+    }
+
+    .logo-block {
+        max-width: 1024px;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .fix-size {
+        max-width: 708px;
+    }
+
+    .card-container {
+        max-width: 648px
+    } 
+}
+
+
+
+@media (max-width: 680px) {
+
+    .card {
+        width: 100%;
+    }
+}
+
+
+
+@media (max-width: 535px) {
+
+    .card {
+        margin-top: 30px;
+    }
+
+    .klients {
+        width: 375px;
+    }
+
+    .logo-block {
+        max-height: 720px;
+        overflow-y: auto;
+        white-space: nowrap;
+    }
+}

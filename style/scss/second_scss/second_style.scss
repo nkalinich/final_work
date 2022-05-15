@@ -34,24 +34,9 @@ body {
     border-radius: 0px 0px 12px 12px;
 }
 
-.letter {
-    background-image: url("../../images/Symbol.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-}
-
-
-
-@media (max-width: 768px) {
-
-    .letter {
-        background-size: cover;
-    }
-}
 
 @import "variable";
 @import "modal";
-@import "header"; 
-@import "main";
-@import "footer";
+@import "sec_header"; 
+@import "sec_main";
+@import "sec_footer";

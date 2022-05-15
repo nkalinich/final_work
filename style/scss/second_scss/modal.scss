@@ -49,7 +49,7 @@
 }
 
 .modal-input {
-    border: white;
+    border: none;
     width: 100%;
     height: 56px;
     background: $primary_color;
@@ -60,11 +60,6 @@
     line-height: 26px;
     margin-top: 15px;
     padding: 15px;
-
-    &:focus-visible {
-        outline: none;
-        border: 1px solid #24A3FF;
-    }
 }
 
 .modal-input::placeholder {
@@ -90,14 +85,6 @@
     text-align: center;
     color: #FFFFFF;
     cursor: pointer;
-
-    &:hover {
-        background: #0085FF;
-    }
-
-    &:active {
-        background: #006CCF;
-    }
 }
 
 @media (max-width: 768px) {
